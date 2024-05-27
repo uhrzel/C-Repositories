@@ -1,23 +1,34 @@
 #include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-#include  <stdlib.h>
 
-void str_lower(char str[]){
-    char ch[100];
-    int len = strlen(str);
-    for(int i =- 0; i < len; i++){
-        ch[i] = toupper(str[i]);
+int main()
+{
+    int temp = 0;
+    int arr[] = {3, 2, 1, 4, 5};
+
+    for (int x = 0; x <= 5; x++)
+    {
+        for (int i = 0; i <= 5; i++)
+        {
+            if (arr[x] <= arr[i])
+            {
+                temp = arr[i];
+                arr[i] = arr[x];
+                arr[x] = temp;
+            }
+        }
     }
-    printf("%s",ch);
-}
 
-int main() {
+    for (int x = 0; x < 5; x++)
+    {
 
-    char str[100];
-    printf("Enter string: ");
-   fgets(str,100,stdin);
-    fflush(stdin);
-    str_lower(str);
+        if (x == 5 - 1)
+        {
+            printf("%d", arr[x]);
+        }
+        else
+        {
+            printf("%d, ", arr[x]);
+        }
+    }
     return 0;
 }
