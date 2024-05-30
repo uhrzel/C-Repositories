@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    for (int x = 0; x < 10; x++)
+    for (int x = 0; x <= 3; x++)
     {
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i <= 3; i++)
         {
 
             cout << "*";
