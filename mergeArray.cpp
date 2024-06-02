@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void mergeArray(string arr1[], string arr2[], int sizearr1, int sizearr2)
+void mergeArray(int arr1[], int arr2[], int sizearr1, int sizearr2)
 {
     int mergesize = sizearr1 + sizearr2;
 
-    string mergeArray[mergesize];
+    int mergeArray[mergesize];
 
     for (int x = 0; x < sizearr1; x++)
     {
@@ -25,11 +25,11 @@ void mergeArray(string arr1[], string arr2[], int sizearr1, int sizearr2)
 
 int main()
 {
-    string array1[] = {"Arzel", "John", "Mark", "Lloyd", "Jonathan"};
-    string array2[] = {"Rose", "Marry", "Joyce", "Hannah", "Lady"};
+    int array1[] = {1, 2, 3, 4, 5};
+    int array2[] = {6, 7, 8, 9, 10};
 
-    int sizearr1 = sizeof(array1) / sizeof(string);
-    int sizearr2 = sizeof(array1) / sizeof(string);
+    int sizearr1 = sizeof(array1) / sizeof(int);
+    int sizearr2 = sizeof(array1) / sizeof(int);
 
     mergeArray(array1, array2, sizearr1, sizearr2);
 
