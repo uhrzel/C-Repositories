@@ -9,12 +9,13 @@ int main()
     myCollection.push("arzel");
     myCollection.push("john");
     myCollection.push("zolina");
+    myCollection.pop();
+    myCollection.pop();
+    myCollection.pop();
 
-    while (!myCollection.empty())
+    if (!myCollection.empty())
     {
-        cout << myCollection.top() << " ";
-        myCollection.pop();
+        cout << "Top element is:" << myCollection.top() << endl;
     }
-
     return 0;
 }
