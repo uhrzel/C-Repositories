@@ -54,4 +54,3 @@ Contributions are welcome! If you have examples or explanations to add or improv
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).
-``
