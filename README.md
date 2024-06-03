@@ -22,12 +22,12 @@
 4. **System Development Life Cycle**
 
    - SDLC Phases
-   - Status: done
+   - Status: Done
 
 5. **Object-Oriented Programming Concepts**
 
    - OOP Basics
-   - Status: Not Started
+   - Status: Done
 
 6. **Networking Concepts**
 
