@@ -22,7 +22,7 @@
 4. **System Development Life Cycle**
 
    - SDLC Phases
-   - Status: In Progress
+   - Status: done
 
 5. **Object-Oriented Programming Concepts**
 
