@@ -1,42 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void strArray(string name, char strName[], int size)
 {
-
-    string str = "arzel";
-
-    char strArray[5];
-
-    int size = str.length();
-
     for (int x = 0; x < size; x++)
     {
-
-        strArray[x] = str[x];
+        strName[x] = name[x];
     }
-
-    strArray[size] = '\0';
-
-    int temp = 0;
-
-    for (int i = 0; i < size; i++)
+    strName[size] = '\0';
+    for (int i = size; i >= 0; i--)
     {
-        for (int j = i + 1; j < size; j++)
-        {
-            if (strArray[j] < strArray[i])
-            {
-                temp = strArray[i];
-                strArray[i] = strArray[j];
-                strArray[j] = temp;
-            }
-        }
+        cout << strName[i] << " ";
     }
+}
 
-    for (int c = 0; c < size; c++)
-    {
-        cout << strArray[c] << " ";
-    }
+int main()
+{
+    string name = "Arzel";
+    int size = name.length();
 
+    char arrayName[5];
+
+    strArray(name, arrayName, size);
     return 0;
 }
