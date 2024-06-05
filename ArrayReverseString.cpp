@@ -1,7 +1,5 @@
 #include <iostream>
-using namespace std;
-
-void strArray(string name, char strName[], int size)
+void strArray(std::string name, char strName[], int size)
 {
     for (int x = 0; x < size; x++)
     {
@@ -10,13 +8,13 @@ void strArray(string name, char strName[], int size)
     strName[size] = '\0';
     for (int i = size; i >= 0; i--)
     {
-        cout << strName[i] << " ";
+        std::cout << strName[i] << std::endl;
     }
 }
 
 int main()
 {
-    string name = "Arzel";
+    std::string name = "Arzel";
     int size = name.length();
 
     char arrayName[5];
