@@ -40,8 +40,14 @@
    - Status: Not Started
 
 8. **Database Concepts**
+
    - SQL, Normalization
    - Status: Not Started
+
+9. **Study Bukas**
+   - OOP = getters, setters
+   - DATA STRUCTURES = linkedlist,arrays
+   - Status: Ongoing
 
 ## License
 
