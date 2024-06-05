@@ -7,17 +7,10 @@ void numsArray(int array[], int n)
     {
         cin >> array[x];
     }
-    int secondMaxValue = 0;
-    int max = 0;
-    for (int x = 0; x < n; x++)
+    for (int x = n - 1; x >= 0; x--)
     {
-        if (array[x] > max)
-        {
-            secondMaxValue = max;
-            max = array[x];
-        }
+        cout << array[x] << " ";
     }
-    cout << secondMaxValue << endl;
 }
 
 int main()
