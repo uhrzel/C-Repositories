@@ -4,25 +4,23 @@ int main()
 {
 
     int n;
-    cout << "Enter the number of items: ";
+    cout << "Enter the number of students: ";
     cin >> n;
 
     int arr[n];
     int size = sizeof(arr) / sizeof(int);
-    cout << "Enter the prices of " << n << " items: ";
+    cout << "Enter the scores of " << n << " students: ";
     for (int i = 0; i < size; i++)
     {
         cin >> arr[i];
     }
-    int min = arr[0];
+    double sum = 0;
+    double ave = 0;
     for (int i = 0; i < size; i++)
     {
-        if (arr[i] < min)
-        {
-
-            min = arr[i];
-        }
+        sum += arr[i];
+        ave = sum / size;
     }
-    cout << "Minimum price among all items: " << min;
+    cout << "Average score of the class: " << ave;
     return 0;
 }
