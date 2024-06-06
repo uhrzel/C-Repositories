@@ -2,27 +2,44 @@
 
 using namespace std;
 
-class myProblem
+class myprobelm
 {
 private:
-    int a;
-    int b;
+    char *arr;
+    int size;
 
 public:
-    void setAdd(int x, int y)
+    void solution()
     {
-        a = x;
-        b = y;
-    }
-    int getAdd()
-    {
-        return a + b;
+        cin >> size;
+        arr = new char[size];
+        for (int i = 0; i < size; i++)
+        {
+            cin >> arr[i];
+        }
+        char target = 'a';
+        bool found = false;
+        for (int i = 0; i < size; i++)
+        {
+            if (arr[i] == target)
+            {
+                found = true;
+            }
+        }
+        if (found)
+        {
+            cout << "Found";
+        }
+        else
+        {
+            cout << "Not Found";
+        }
     }
 };
 
 int main()
 {
-    myProblem obj;
-    obj.setAdd(5, 10);
-    cout << obj.getAdd();
+    myprobelm obj;
+    obj.solution();
+    return 0;
 }
