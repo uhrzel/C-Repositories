@@ -1,27 +1,17 @@
 #include <iostream>
 using namespace std;
 
-class myProblem
-{
-private:
-    int age;
-
-public:
-    void setAge(int n)
-    {
-        age = n;
-    }
-    int getAge()
-    {
-        return age;
-    }
-};
 int main()
 {
-    myProblem obj;
-    obj.setAge(500);
 
-    cout << obj.getAge();
+    int n;
+    cin >> n;
 
-    return 0;
+    int factorial = 1;
+
+    for (int x = 1; x <= n; x++)
+    {
+        factorial = factorial * x;
+    }
+    cout << "factorial of " << n << " is: " << factorial << endl;
 }

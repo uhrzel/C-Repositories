@@ -1,15 +1,17 @@
-#include<stdio.h>
-int main(){
-    int num, count, fact = 1;
-    printf("input: ");
-    scanf("%d",&num);
+#include <iostream>
+using namespace std;
 
-    for(count = 1; count<= num; count++){
-        fact = fact * count;
+int main()
+{
+
+    int n;
+    cin >> n;
+
+    int factorial = 1;
+
+    for (int x = 1; x <= n; x++)
+    {
+        factorial = factorial * x;
     }
-
-    printf("Factorial of %d is: %d ", num,fact);
+    cout << "factorial of " << n << " is: " << factorial << endl;
 }
-
-
-
