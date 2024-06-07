@@ -1,45 +1,27 @@
 #include <iostream>
-
 using namespace std;
-
-class myprobelm
+int main()
 {
-private:
-    char *arr;
-    int size;
+    const int row = 3;
+    const int cols = 3;
+    int arr[row][cols] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int temp = 0;
 
-public:
-    void solution()
+    for (int i = 0; i < row; i++)
     {
-        cin >> size;
-        arr = new char[size];
-        for (int i = 0; i < size; i++)
+        if (i % 2 == 0)
         {
-            cin >> arr[i];
-        }
-        char target = 'a';
-        bool found = false;
-        for (int i = 0; i < size; i++)
-        {
-            if (arr[i] == target)
+            for (int j = 0; j < cols; j++)
             {
-                found = true;
+                cout << arr[i][j] << " ";
             }
-        }
-        if (found)
-        {
-            cout << "Found";
         }
         else
         {
-            cout << "Not Found";
+            for (int j = cols - 1; j >= 0; j--)
+            {
+                cout << arr[i][j] << " ";
+            }
         }
     }
-};
-
-int main()
-{
-    myprobelm obj;
-    obj.solution();
-    return 0;
 }
